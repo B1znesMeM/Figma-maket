@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+
+    -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none; 
+        overflow-x: hidden;
+}
+
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo__div{
+    display: flex;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #fff;
+    height: 87px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+}
+
+.image__item-top{
+    position: relative;
+    margin-right: -26.3px;
+    vertical-align: top;
+}
+
+.image__item-bottom{
+    position: relative;
+    top: 22.5px
+}
+
+.image__item{
+    vertical-align: bottom;
+}
+
+.title__logo {
+    position: relative;
+    top: 6px;
+    margin-left: 20px;
+}
+
+.title__item{
+    text-align: center;
+    align-items: center;
+}
+.nav {
+    text-align: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.nav__item {
+    margin-left: 25px;
+}
+
+.nav__item:last-child{
+    margin-left: 40px;
+}
+
+.app__item {
+    margin-left: 70px;
+}
+
+.login__item {
+    margin-left: 40px;
+}
+.register {
+    margin-left: 20px;
+    background-color: #D29C4C;
+    color: white;
+    padding: 13px 20px;
+}
+
+/* Install */
+
+.install {
+    display: flex;
+    background: url(./figma-image/Mask\ group.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 730px;
+}
+
+.install__block {
+    width: 100%;
+    display: flex;
+}
+
+.prev-left {
+    width: 59px;
+    height: 94px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+
+.install__text {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    top: 10vh;
+    width: 500px;
+    height: 500px;
+    margin-left: 303px
+}
+
+.install__app {
+    margin-top: 20px
+}
+
+.install__image {
+    height: 822px;
+    width: 675px;
+    position: absolute;
+    top: 42vh;
+    right: 5%;
+}
+
+.prev-right {
+    width: 59px;
+    height: 94px;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+
+.install__app-store{
+    width: calc(var(--index) * 9);
+}
+
+.install__google{
+    width: calc(var(--index) * 9);
+}
+
+.install__title{
+    font-size: calc(var(--index) * 3);
+}
+
+/* Hotel */
+
+.hotel {
+background-color: #fff;
+height: 95vh;
+}
+.hotel__text {
+    width: 550px;
+    margin-top: 10vh;
+    margin-left: 20%;
+}
+.hotel__p-top {
+    font-size: 12px;
+    color: #969494;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hotel__h2 {
+    font-size: 46px;
+    color: #000000;
+}
+.hotel__p {
+    color: #434242;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.hotel__a {
+    color:white;
+    background-color: #D29C4C;
+    padding: 15px 25px;
+    text-transform: uppercase;
+}
+
+.hotel__bottom{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: end;
+}
+
+.prev-right__hotel {
+    position: relative;
+    top: 45%;
+    right: 50px;
+}
+.border__image {
+    margin-right: 5px;
+    width: 254px;
+    height: 254px;
+}
+.hotel__bottom-image {
+    margin-left: 40px;
+    width: 254px;
+    height: 254px;
+}
+
+/* Experience */
+
+.experience{
+    background: url(./figma-image/Rectangle\ 41.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 20vh;
+}
+
+.experience__text-top{
+    text-align: center;
+    width: 660px;
+    margin-left: 30%; 
+}
+
+.experience__p-top{
+    font-size: 12px;
+    color: #969494;
+    opacity: .7;
+}
+
+.experience__title-top{
+    font-size: calc(var(--index) * 2);
+    text-align: center;
+}
+
+/* Experience middle */
+
+.experience__middle{
+    margin-top: 10vh;
+    display: flex;
+}
+
+.experience__middle__block{
+    margin-top: 30px;
+    display: flex;
+}
+
+.experience__middle-image{
+    max-width: 360px;
+    max-height: 500px;
+    margin-right: 3%;
+    margin-left: 22.5%;
+}
+
+.experience__middle-image::before{
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #F6E8D4;
+    margin-top: 5px;
+}
+
+.experience__middle__block-image{
+    width: 32px;
+    height: 38px;
+    position: relative;
+    margin-top: 18px;
+    margin-left: 17px;
+}
+
+.experience__middle__block__title{
+    font-size: 18px;
+    color: #000000;
+}
+
+.experience__middle__block__paragraph{
+    font-size: 14px;
+    color: #434242;
+}
+
+.experience__middle__block-text{
+    width: 485px;
+    position: relative;
+    right: 0;
+    margin-left: 20px;
+}
+
+.experience__middle__block-image-analytic{
+    width: 71px;
+    height: 43px;
+    position: relative;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.experience__middle__block-text-analytic{
+    width: 485px;
+}
+
+.last-child__middle-block{
+    margin-top: 50px;
+}
+
+/* Experience bottom */
+
+.experience__bottom{
+    margin-top: 15vh;
+    margin-left: 22.5%;
+    width: 580px;
+}
+
+.experience__bottom-text-p-top{
+    color: #969494;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.experience__bottom-text-title{
+    color: black;
+    font-size: 44px;
+}
+
+.experience__bottom-text-p-bottom{
+    color: #434242;
+    font-size: 16px;
+}
+
+.experience__bottom-prebottom-text{
+    display: flex;
+}
+
+.experience__bottom-prebottom{
+    margin-left: 9%;
+    margin-top: 3%;
+}
+
+.experience__bottom-prebottom-text-block{
+    margin-left: 15%;
+}
+
+.experience__bottom-prebottom-text-title{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.experience__bottom-prebottom-text-p{
+    font-size: 16px;
+    color: #434242;
+}
+
+.experience__bottom-prebottom-text-a{
+    margin-top: 7vh;
+    margin-left: 15%;
+}
+
+.experience__bottom-prebottom-text-title-a{
+    padding: 12px 25px;
+    background-color: #D29C4C;
+    color: white;
+    font-size: 14px;
+}
+
+/* Ex and Diver */
+
+.experience_and_diversification{
+    width: 824px;
+    height: 408px;
+    position: absolute;
+    top: -12vh;
+    right: 0;
+}
+
+/* Diversification */
+
+.diversification{
+    background: url(./figma-image/Slice\ 15.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    padding-bottom: 20vh;
+}
+
+.diversification__text-top{
+    margin-left: 20.5%;
+    width: 670px;
+    padding-top: 60vh;
+}
+
+.diversification__text-paragraph{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    opacity: .8;
+}
+
+.diversification__text-title{
+    font-size: 44px;
+}
+
+.diversification__text-paragraph-bottom{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Diversification bottom */
+
+.diversification__text-bottom{
+    margin-left: 20.5%;
+}
+
+.diversification-image-block{
+    position: relative;
+    margin-top: 8%;
+    color: white;
+}
+
+.diversification__image-bottom{
+    position: absolute;
+}
+
+.diversification__text-bottom-block{
+    margin-bottom: 5%;
+}
+
+.diversification-image-block-title{
+    padding-top: 30px;
+}
+
+.diversification__text-bottom-title{
+    padding-left: 30px;
+}
+
+.diversification__text-bottom-paragraph{
+    padding-left: 30px;
+    width: 515px;
+    font-size: 14px;
+}
+
+.diversification__text-bottom-title-two{
+    padding-top: 20px;
+}
+
+.diversification__bottom{
+    display: flex;
+}
+
+.diversification__bottom-right{
+    display: flex;
+    max-height: 431px;
+    margin-left: 45px;
+}
+
+.diversification__bottom-right__text{
+    background-color: #9B6A21;
+    width: 280px;
+    padding: 30px;
+    padding-right: 20px;
+    line-height: 1.6em;
+}
+
+.diversification__bottom-right__image{
+    width: 331px;
+    height: 331px;
+}
+
+.diversification__bottom-right__text-title{
+    font-size: 20px;
+}
+
+.diversification__bottom-right__text-paragraph{
+    font-size: 14px;
+}
+
+/* Investor */
+
+.investor__block{
+    display: flex;
+    justify-content: center;
+}
+
+.investor__text{
+    padding-top: 10vh;
+    text-align: center;
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+.investor__text-paragraph{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #969494;
+}
+
+.investor__text-title{
+    font-size: 44px;
+}
+
+.investor__block__item{
+    max-width: 400px;
+    text-align: center;
+    margin-top: 10vh;
+    margin-left: 40px;
+}
+
+.investor__block-image{
+     max-height: 580px;
+}
+
+.investor__block-title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 25px
+}
+
+.imvestor__block-image-left-and-right{
+    margin-top: 10vh;
+}
+
+/* world */
+
+.world{
+    background-color: #D29C4C;
+    height: 580px;
+    color: #fff;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5vh;
+}
+
+.world__text{
+    width: 520px;
+}
+
+.world__text-paragraph-top{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .7
+}
+
+.world__text-paragraph-bottom{
+    font-size: 44px;
+}
+
+.world__image-block-top{
+    display: flex;
+}
+
+.world__image-block-middle{
+    display: flex;
+}
+
+.world__image-block-bottom{
+    display: flex;
+}
+
+.world_image{
+    width: 150px;
+    height: 85px;
+}
+
+.world__text{
+    margin-left: 11.5%;
+    margin-top: 15%
+}
+
+.world__image-div{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.world__image-block{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* News */
+
+.news{
+    margin-top: 20vh;
+    position: relative;
+}
+
+.news__image{
+    background: url(./figma-image/Rectangle\ 38.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.news__text{
+    margin-left: 20.5%;
+}
+
+.news__text-paragraph{
+    font-size: 12px;
+    color: #969494;
+    letter-spacing: 1px;
+}
+
+.news__text-title{
+    font-size: 38px;
+
+}
+
+.news__text-a{
+    margin-left: 30%;
+    background-color: #D29C4C;
+    padding: 15px 25px;
+    color: white;
+}
+
+.news__text-title-button{
+    display: flex;
+}
+
+.news__image{
+    width: 1170px;
+    height: 565px;
+    position: absolute;
+    right: 0;
+    top: 15vh;
+}
+
+.news__content{
+    position: relative;
+    width: 1380px;
+    height: 830px;
+    background-color: white;
+    top: 60vh;
+}
+
+.news__content-div{
+    padding-left: 19%;
+    padding-top: 10vh;
+    display: flex;
+}
+
+.news__content-block__text{
+    border-right: 2px solid #e5e5ee;
+    position: relative;
+}
+
+.news__content-block-paragraph-title{
+    border-right: 2.5px solid #D29C4C;
+    margin-right: -1.5px;
+    padding-right: 60px;
+}
+
+.news__content-block{
+    width: 330px;
+    margin-left: 40px;
+}
+
+.news__content-block-paragraph-top{
+    color:#969494;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.news__content-block-title{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.news__content-block-paragraph-bottom{
+    color:#434242;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+.news__content-block-a{
+    color: #D29C4C;
+    text-transform: uppercase;
+}
+
+.news__content-block-image{
+    margin-top: 40px;
+}
+
+.news__content-block-paragraph-title-last{
+    padding-right: 60px;
+}
+
+/* Investment */
+
+.investment{
+    background-color: #F6F7F8;
+    /* position: relative; */
+    margin-top: 60vh;
+    height: 250px;
+    display: flex;
+}
+
+.investment__text{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.investment__text-paragraph{
+    margin-bottom: 20px;
+    padding-top: 10%;
+}
+
+.investment__image{
+    width: 90px;
+    height: 39px;
+}
+
+.investment__prev-left{
+    width: 22px;
+    height: 33px;
+    position: relative;
+    top: 45%;
+    left: 5%;
+}
+
+.investment__prev-right{
+    width: 22px;
+    height: 33px;
+    position: relative;
+    top: 45%;
+    right: 5%;
+}
+
+/* Phone */
+
+.phone{
+    display: flex;
+    margin-top: 15vh;
+}
+
+.phone__text{
+    width: 600px;
+    margin-left: 20.5%;
+}
+
+.phone__text-title{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.phone__text-paragraph{
+    color:#434242;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.phone__text-image{
+    width: 170px;
+    height: 50px;
+}
+
+.phone__image{
+    width: 400px;
+    height: 550px;
+    position: absolute;
+}
+
+/* footer */
+
+.footer{
+    background-color: #242430;
+    color: #ffffff;
+    position: relative;
+    top: 20vh;
+    padding-bottom: 10vh;
+}
+
+.footer__blocks{
+    display: flex;
+    padding-top: 10vh;
+}
+
+.footer__block{
+    padding-left: 20.5%;
+    border-bottom: 1px rgba(255, 255, 255 , .2) solid;
+    padding-bottom: 20px;
+}
+
+.footer__block-one{
+    margin-left: 20.5%;
+    border-bottom: 1px solid rgba(255, 255, 255 , .2);
+    padding-bottom: 20px;
+}
+
+.footer__block-title{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer__block-content__item{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    margin-top: 5vh;
+    margin-left: 20.5%;
+}
+
+.footer-bottom-paragraph{
+    font-size: 14px;
+    margin-top: 10px;
+}
